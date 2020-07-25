@@ -23,7 +23,6 @@ function pickIt(arr) {
       odd.push(arr[i]);
     }
   }
-
   return [odd, even];
 }
 
