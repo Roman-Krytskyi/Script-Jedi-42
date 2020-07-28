@@ -205,7 +205,7 @@ describe('`clear()` removes all elements from a Set object.', function(){
     assert.deepEqual(set.has(2), false);
   });
   it('returns `undefined`', function() {
-    var actualReturn = undefined;
+    var actualReturn;
     assert.equal(actualReturn, set.clear());
   });
 });
