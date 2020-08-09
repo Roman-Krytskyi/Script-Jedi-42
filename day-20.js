@@ -1,7 +1,5 @@
 // http://www.codewars.com/kata/5735e39313c205fe39001173
-function countAnimals(animals,count){
-  return count.map(counter=>animals.split(counter).length-1);
-}
+const countAnimals = (animals,count) => count.map(el=>(animals.match(new RegExp(el,"g"))||[]).length);
 
 // http://www.codewars.com/kata/573975d3ac3eec695b0013e0
 function findSimilarity(str, word) {
