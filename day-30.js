@@ -22,4 +22,17 @@ function HumanSkin(model) {
 }
 
 // https://www.codewars.com/kata/588a00ad70720f2cd9000005
-coming soon
+class Router {
+    constructor() {
+        this.routes = new Map();
+    }    
+    bind(url, method, action) {
+        this.routes.set(url + ":" + method, rest);
+    }
+    runRequest(url, method) {
+        if (!this.routes.has(url + ":" + method)) {
+            return "Error 404: Not Found";
+        }
+        return this.routes.get(url + ":" + method)();
+    }
+}
